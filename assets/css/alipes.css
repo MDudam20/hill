@@ -362,7 +362,7 @@ ul {
 
 .preloader {
     position: fixed;
-    background-color: #fff;
+    background-color: #122243;
     background-position: center center;
     background-repeat: no-repeat;
     top: 0;
@@ -391,10 +391,10 @@ ul {
     animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    background-image: url(../images/loader.png);
+    background-image: url(../images/hill/soveren-hill-logo.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 60px auto;
+    background-size: 160px auto;
     width: 100%;
     height: 100%;
 }
@@ -1828,7 +1828,7 @@ width: 70%;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(26, 21, 14, .60);
+    /* background-color: rgba(26, 21, 14, .60); */
 }
 
 .main-slider .swiper-slide-active .image-layer {
@@ -2517,8 +2517,8 @@ width: 70%;
 
 
 .about-one__text-2 {
-    margin-top: 30px;
-    margin-bottom: 38px;
+    margin-top: 20px;
+    margin-bottom: 22px;
     color: #000;
 }
 
@@ -3040,6 +3040,8 @@ width: 70%;
     margin-bottom: 30px;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
+    border: 3px solid var(--alipes-base);
+    padding: 4px;
 }
 
 .apartment-one__single:hover {
@@ -3056,6 +3058,7 @@ width: 70%;
     position: relative;
     display: block;
     z-index: 1;
+    
 }
 
 .apartment-one__img:before {
@@ -3071,6 +3074,7 @@ width: 70%;
 
 .apartment-one__img img {
     width: 100%;
+  
 }
 
 .apartment-one__content {
@@ -4438,7 +4442,7 @@ width: 70%;
     display: inline-block;
     font-size: 15px;
     font-weight: 400;
-    color: #7a736a;
+    color: #fff;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
     z-index: 1;
@@ -4459,7 +4463,7 @@ width: 70%;
 }
 
 .footer-widget__explore-list li a:hover {
-    color: var(--alipes-white);
+    color: var(--alipes-base);
     text-shadow: .3px 0 0 rgba(255, 255, 255, .8);
 }
 
@@ -4994,6 +4998,14 @@ width: 70%;
     z-index: 1;
     border: 2px solid var(--alipes-black);
     text-align: center;
+    max-height: 500px;
+    height: 350px;
+}
+@media (max-width: 767px) {
+    .services-one__single-inner {
+        height: auto;
+        max-height: 500px;
+    }
 }
 
 .services-one__single:hover .services-one__single-inner {
@@ -6317,51 +6329,60 @@ width: 70%;
     z-index: 1;
     cursor: pointer; /* Indicate interactivity */
     transition: background-color 300ms ease;
+    padding: 20px;
+}
+.apartment-one__img-box {
+    position: relative;
+    display: block;
+    z-index: 1;
 }
 
-.apartment-three__img:hover {
-    background-color: red !important; /* Change background to red on hover */
+.apartment-three__img {
+    position: relative;
+    display: block;
+    z-index: 1;
+    overflow: hidden; /* Ensure child elements don't overflow */
 }
+
+
+
 .apartment-three__img img {
     width: 100%;
-    transition: all 500ms ease;
+    display: block;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
 }
 
-.apartment-three__img:hover .default-img {
-    opacity: 0;
+.apartment-three__img:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-.apartment-three__img:hover .hover-img {
-    opacity: 1;
-}
-
-.apartment-three__img .hover-img {
+.apartment-three__img .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    background: rgba(241, 145, 54, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 0.3s ease;
+    z-index: 2; /* Ensure overlay is above the image */
 }
 
-.magnify-glass {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 20px;
-    border-radius: 50%;
-    display: none;
-    z-index: 2;
+.apartment-three__img:hover .overlay {
+    opacity: 1;
 }
 
-.apartment-three__img:hover .magnify-glass {
-    display: block;
+.apartment-three__img .overlay .icon {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    pointer-events: none; /* Prevent interference with click events */
 }
+
+
 
 
 .apartment-three__content {
@@ -12146,4 +12167,28 @@ body.boxed-wrapper {
 .b{
     color: #000;
     font-weight: 800;
+}
+.modal img{
+    width: 15%;
+}
+.modal .modal-content{
+    background-color: #78081ce6;
+}
+.modal .modal-content h6{
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.modal .contact-one__input-box input[type="text"],.modal .contact-one__input-box input[type="email"] {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #514b44;
+    background-color: transparent;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    font-weight: 400;
 }
