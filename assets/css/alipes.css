@@ -771,7 +771,7 @@ width: 70%;
     border-radius: 0px;
     background-color: var(--alipes-base);
     position: absolute;
-    top: -38px;
+    top: 100%;
     left: -12px;
     right: -12px;
     transition: transform 500ms ease;
