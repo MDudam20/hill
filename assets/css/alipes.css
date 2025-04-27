@@ -26,9 +26,11 @@
     --alipes-gray-rgb: 130, 126, 120;
     --alipes-white: #ffffff;
     --alipes-white-rgb: 255, 255, 255;
-    --alipes-base: #cd8c66;
+    /* --alipes-base: #cd8c66; */
+    --alipes-base: #ffc107;
     --alipes-base-rgb: 205, 140, 102;
     --alipes-black: #78081c;
+    /* --alipes-black: #000; */
     --alipes-black-rgb: 34, 28, 19;
     --alipes-primary: #f6f4f1;
     --alipes-primary-rgb: 246, 244, 241;
@@ -300,7 +302,7 @@ ul {
 
 .section-title__title {
     margin: 0;
-    color: var(--alipes-black);
+    color: #78081c;
     font-size: 45px;
     line-height: 50px;
     font-weight: 500;
@@ -702,7 +704,7 @@ width: 70%;
 }
 
 .stricky-header.main-menu {
-    background-color: var(--alipes-black);
+    background-color:#78081c;
 }
 
 .main-menu .main-menu__list,
@@ -1798,8 +1800,8 @@ width: 70%;
 
 .main-slider .container {
     position: relative;
-    padding-top: 375px;
-    padding-bottom: 235px;
+    padding-top: 385px;
+    padding-bottom: 245px;
     z-index: 30;
 }
 
@@ -1811,7 +1813,8 @@ width: 70%;
     left: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left center;
+    background-position: center center;
+    background-attachment: fixed;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: opacity 1500ms ease-in, -webkit-transform 7000ms ease;
@@ -1851,8 +1854,214 @@ width: 70%;
 .main-slider__content {
     position: relative;
     display: block;
+    z-index: 2;
+    
 }
 
+.left-image img {
+    position: absolute;
+    z-index: 3;
+    max-width: 23%; /* Adjust size as needed */
+    right: -8%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+    top:20px;
+
+}
+.right-image img {
+    position: absolute;
+    z-index: 3;
+    max-width: 35%;
+    /* bottom: 60%; */
+    bottom: -93px;
+    left: 0;
+
+
+}
+.right-image-a img {
+    
+        position: absolute;
+        z-index: 3;
+        max-width: 40%;
+        /* bottom: 60%; */
+        bottom: 3px;
+        right: 154px;
+      
+
+}
+@media (max-width: 1850px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 23%; /* Adjust size as needed */
+        right: -13%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+}
+@media (max-width: 1400px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 23%; /* Adjust size as needed */
+        right: -7%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+}
+@media (max-width: 1200px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 23%; /* Adjust size as needed */
+        right: -18%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+}
+@media (max-width: 1050px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 23%; /* Adjust size as needed */
+        right: -2%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+    .right-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 35%;
+        /* bottom: 60%; */
+        bottom: -93px;
+        left: -2%;
+    
+    
+    }
+}
+@media (max-width: 900px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 40%; /* Adjust size as needed */
+        right: -8%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+    .right-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 55%;
+        /* bottom: 60%; */
+        bottom: 20px;
+        left: -2%;
+    
+    
+    }
+    .right-image-a img {
+    
+        position: absolute;
+        z-index: 3;
+        max-width: 70%;
+        /* bottom: 60%; */
+        bottom: 3px;
+        right: 10px;
+}
+}
+@media (max-width: 550px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 40%; /* Adjust size as needed */
+        right: -4%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+    .right-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 55%;
+        /* bottom: 60%; */
+        bottom: 20px;
+        left: -2%;
+    
+    
+    }
+    .right-image-a img {
+    
+        position: absolute;
+        z-index: 3;
+        max-width: 70%;
+        /* bottom: 60%; */
+        bottom: 3px;
+        right: 10px;
+}
+}
+@media (max-width: 900px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 40%; /* Adjust size as needed */
+        right: -8%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+    .right-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 55%;
+        /* bottom: 60%; */
+        bottom: 20px;
+        left: -2%;
+    
+    
+    }
+    .right-image-a img {
+    
+        position: absolute;
+        z-index: 3;
+        max-width: 70%;
+        /* bottom: 60%; */
+        bottom: 3px;
+        right: 10px;
+}
+}
+@media (max-width: 800px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 40%; /* Adjust size as needed */
+        right: -6%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+    .right-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 55%;
+        /* bottom: 60%; */
+        bottom: 20px;
+        left: -2%;
+    
+    
+    }
+    .right-image-a img {
+    
+        position: absolute;
+        z-index: 3;
+        max-width: 70%;
+        /* bottom: 60%; */
+        bottom: 3px;
+        right: 10px;
+}
+}
 .main-slider__title {
     position: relative;
     font-size: 100px;
@@ -2520,6 +2729,7 @@ width: 70%;
     margin-top: 20px;
     margin-bottom: 22px;
     color: #000;
+    text-align: justify;
 }
 
 .about-one__points-list {
@@ -12191,4 +12401,8 @@ body.boxed-wrapper {
     color: #fff;
     display: block;
     font-weight: 400;
+}
+.about-two__text-1{
+    color: #000;
+    text-align: justify;
 }
