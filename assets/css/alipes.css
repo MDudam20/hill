@@ -1893,7 +1893,7 @@ width: 70%;
         position: absolute;
         z-index: 3;
         max-width: 23%; /* Adjust size as needed */
-        right: -13%;
+        right: -12%;
         background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
         top:20px;
     
@@ -1904,7 +1904,40 @@ width: 70%;
         position: absolute;
         z-index: 3;
         max-width: 23%; /* Adjust size as needed */
-        right: -7%;
+        right: -10%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+}
+@media (max-width: 1300px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 23%; /* Adjust size as needed */
+        right: -6%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+}
+@media (max-width: 1250px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 23%; /* Adjust size as needed */
+        right: -3%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+}
+@media (max-width: 1215px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 23%; /* Adjust size as needed */
+        right: -2%;
         background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
         top:20px;
     
@@ -1915,7 +1948,7 @@ width: 70%;
         position: absolute;
         z-index: 3;
         max-width: 23%; /* Adjust size as needed */
-        right: -18%;
+        right: -14%;
         background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
         top:20px;
     
@@ -1926,7 +1959,7 @@ width: 70%;
         position: absolute;
         z-index: 3;
         max-width: 23%; /* Adjust size as needed */
-        right: -2%;
+        right: -5%;
         background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
         top:20px;
     
@@ -12405,4 +12438,7 @@ body.boxed-wrapper {
 .about-two__text-1{
     color: #000;
     text-align: justify;
+}
+.iconnn{
+    color: #FCBF11;
 }
