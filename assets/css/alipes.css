@@ -253,6 +253,7 @@ ul {
     padding: 13px 59px 9px;
     transition: all 0.5s linear;
     z-index: 1;
+    border-radius: 20px;
 }
 
 .thm-btn::before {
@@ -291,10 +292,10 @@ ul {
 .section-title__tagline {
     position: relative;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 16px;
     color: var(--alipes-base);
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: var(--alipes-letter-spacing);
     font-family: var(--alipes-font-two);
@@ -574,7 +575,7 @@ ul {
 }
 
 .main-header__contact-list li .text p a {
-    color: #7a736a;
+    color: black;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
@@ -3133,11 +3134,11 @@ width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     background-color: var(--alipes-base);
     border-radius: 50%;
-    font-size: 10px;
+    font-size: 15px;
     color: var(--alipes-white);
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;

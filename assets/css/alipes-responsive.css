@@ -1054,7 +1054,7 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1320px) {
     .main-menu__btn-box {
-        display: none;
+        /* display: none; */
     }
     .main-menu__cart-box {
         margin-right: 0;
