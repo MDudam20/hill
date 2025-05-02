@@ -984,10 +984,10 @@
         padding: 0 30px;
     }
     .main-menu__right {
-        display: none;
+        /* display: none; */
     }
     .main-menu-two__right {
-        display: none;
+        /* display: none; */
     }
     .main-menu-two__wrapper {
         padding: 0 30px;

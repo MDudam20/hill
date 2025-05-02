@@ -4873,11 +4873,11 @@ width: 70%;
     font-size: 15px;
     font-weight: 500;
     line-height: 26px;
-    color: #7a736a;
+    color: #fff;
 }
 
 .site-footer__bottom-text a {
-    color: #7a736a;
+    color: #fff;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
@@ -12467,4 +12467,7 @@ body.boxed-wrapper {
 }
 .iconnn{
     color: #FCBF11;
+}
+.section-title p{
+    color: #e4e1dd;
 }
