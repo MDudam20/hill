@@ -1858,7 +1858,12 @@ width: 70%;
     z-index: 2;
     
 }
-
+.slider-btn .thm-btn{
+    top: 143px;
+    position: absolute;
+    z-index: 3;
+    left: 0px;
+}
   
 .left-image img {
     position: absolute;
