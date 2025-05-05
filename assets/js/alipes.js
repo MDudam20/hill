@@ -22,6 +22,20 @@
         }
 
     }
+    document.addEventListener("DOMContentLoaded", () => {
+        const preloader = document.querySelector(".preloader"); // Select the preloader
+        const modal = new bootstrap.Modal(document.getElementById("exampleModal")); // Bootstrap modal instance
+      
+        // Simulate preloader delay
+        setTimeout(() => {
+          // Hide the preloader
+          preloader.style.display = "none";
+      
+          // Show the modal
+          modal.show();
+        }, 2000); // Adjust the delay time as needed (in milliseconds)
+      });
+      
 
 
 

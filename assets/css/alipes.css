@@ -561,7 +561,7 @@ ul {
 
 .main-header__contact-list li .icon i {
     font-size: 12px;
-    color: var(--alipes-base);
+    color: black;
 }
 
 .main-header__contact-list li .text {
@@ -1859,6 +1859,7 @@ width: 70%;
     
 }
 
+  
 .left-image img {
     position: absolute;
     z-index: 3;
@@ -6660,7 +6661,8 @@ width: 70%;
     text-align: center;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
-    padding: 24px 40px 21px;
+    padding: 24px 20px 21px;
+    height: 200px;
 }
 
 .apartment-three__title {
@@ -7225,6 +7227,10 @@ width: 70%;
     display: block;
     padding: 21px 50px 22px;
     background-color: var(--alipes-white);
+    width: 100%;
+    height: 513px;
+    /* overflow: visible; */
+    overflow-y: auto;
 }
 
 .faq-one-accrodion .accrodion {
@@ -12470,4 +12476,89 @@ body.boxed-wrapper {
 }
 .section-title p{
     color: black;
+}
+
+
+.fixed-image {
+    position: fixed;
+    bottom: 100px; /* Adjust vertical position */
+    right: 0px; /* Adjust horizontal position */
+    width: 18%; /* Adjust size */
+    z-index: 1000; /* Ensure it's above other elements */
+    background: linear-gradient(to left,  rgba(120, 8, 28,0.9) 50%,  rgba(120, 8, 28,0.8) 70%);
+    animation: slideIn 8s ease-out 0.5s, blink 2s infinite; /* Added delay and blink effect */
+    transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s; /* Delayed hover effect */
+}
+
+.fixed-image:hover {
+    transform: scale(1.1) translateY(-10px); /* Slightly enlarges and moves upward */
+    opacity: 0.9; /* Adjust transparency */
+}
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for blinking effect */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 900px){
+    .fixed-image {
+        position: fixed;
+        bottom: 100px; /* Adjust vertical position */
+        right: 0px; /* Adjust horizontal position */
+        width: 26%; /* Adjust size */
+        z-index: 1000; /* Ensure it's above other elements */
+        background: linear-gradient(to left,  rgba(120, 8, 28,0.9) 50%,  rgba(120, 8, 28,0.8) 70%);
+        animation: slideIn 8s ease-out 0.5s, blink 2s infinite; /* Added delay and blink effect */
+        transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s; /* Delayed hover effect */
+    }
+}
+
+@media (max-width: 700px){
+    .fixed-image {
+        position: fixed;
+        bottom: 100px; /* Adjust vertical position */
+        right: 0px; /* Adjust horizontal position */
+        width: 40%; /* Adjust size */
+        z-index: 1000; /* Ensure it's above other elements */
+        background: linear-gradient(to left,  rgba(120, 8, 28,0.9) 50%,  rgba(120, 8, 28,0.8) 70%);
+        animation: slideIn 8s ease-out 0.5s, blink 2s infinite; /* Added delay and blink effect */
+        transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s; /* Delayed hover effect */
+    }
+}
+.privacy-policy{
+    padding: 100px 0px;
+}
+.privacy-policy h3{
+    padding: 10px 0px;
+}
+.privacy-policy p{
+    color:#000;
+}
+.privacy-policy div{
+    margin: 10px 0px;
+}
+.site-footer__bottom .privacy ul {
+    list-style: none; 
+}
+.site-footer__bottom .privacy ul li a{
+    text-decoration: none;
+    padding: 0 5px;
+    color: #fff;
 }
