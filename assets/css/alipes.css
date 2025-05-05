@@ -12567,3 +12567,14 @@ body.boxed-wrapper {
     padding: 0 5px;
     color: #fff;
 }
+.emperia-logo{
+    height: 60px;
+}
+@media (max-width: 330px){
+    .emperia-logo{
+        height: 40px;
+    }
+    .main-menu__logo img {
+        width: 58%;
+    }
+}
