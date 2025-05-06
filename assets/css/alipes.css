@@ -269,6 +269,7 @@ ul {
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
     z-index: -1;
+
 }
 
 .thm-btn:hover {
@@ -2037,36 +2038,7 @@ width: 70%;
         right: 10px;
 }
 }
-@media (max-width: 550px){
-    .left-image img {
-        position: absolute;
-        z-index: 3;
-        max-width: 40%; /* Adjust size as needed */
-        right: -4%;
-        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
-        top:20px;
-    
-    }
-    .right-image img {
-        position: absolute;
-        z-index: 3;
-        max-width: 55%;
-        /* bottom: 60%; */
-        bottom: 20px;
-        left: -2%;
-    
-    
-    }
-    .right-image-a img {
-    
-        position: absolute;
-        z-index: 3;
-        max-width: 70%;
-        /* bottom: 60%; */
-        bottom: 3px;
-        right: 10px;
-}
-}
+
 @media (max-width: 900px){
     .left-image img {
         position: absolute;
@@ -2112,7 +2084,7 @@ width: 70%;
         z-index: 3;
         max-width: 55%;
         /* bottom: 60%; */
-        bottom: 20px;
+        bottom: -15px;
         left: -2%;
     
     
@@ -2123,10 +2095,56 @@ width: 70%;
         z-index: 3;
         max-width: 70%;
         /* bottom: 60%; */
-        bottom: 3px;
-        right: 37px;
+        bottom: -30px;
+        left: -2%;
+    }
+    .slider-btn .thm-btn{
+        top: 38px;
+        position: absolute;
+        z-index: 3;
+        left: 0px;
+        padding: 12px 30px;
+    }
 }
-}
+@media (max-width: 550px){
+    .left-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 40%; /* Adjust size as needed */
+        right: -4%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.1) 70%);
+        top:20px;
+    
+    }
+    .right-image img {
+        position: absolute;
+        z-index: 3;
+        max-width: 78%;
+        /* bottom: 60%; */
+        bottom: -53px;
+        left: -2%;
+    }
+    .right-image-a img {
+    
+        position: absolute;
+        z-index: 3;
+        max-width: 90%;
+        /* bottom: 60%; */
+        bottom: -53px;
+        left: -2px;
+    }
+    .slider-btn .thm-btn{
+        top: 41px;
+        position: absolute;
+        z-index: 3;
+        left: 0px;
+        padding: 12px 30px;
+    }
+    
+    }
+    
+
+
 .main-slider__title {
     position: relative;
     font-size: 100px;
@@ -12576,5 +12594,8 @@ body.boxed-wrapper {
     }
     .main-menu__logo img {
         width: 58%;
+    }
+    .main-menu__wrapper {
+        padding: 0 5px !important;
     }
 }
